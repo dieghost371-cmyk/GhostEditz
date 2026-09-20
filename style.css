@@ -1,0 +1,17 @@
+:root{
+  --bg:#020712; --panel:#07101f; --line:#15233a; --text:#e9f0ff;
+  --muted:#73809a; --blue:#00a9ff; --blue2:#1788ff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100vh;display:grid;place-items:center;padding:28px;overflow-x:hidden}
+.grid{position:fixed;inset:0;opacity:.35;background-image:linear-gradient(#112039 1px,transparent 1px),linear-gradient(90deg,#112039 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent)}
+.panel{position:relative;width:min(520px,100%);padding:44px 34px 30px;border:1px solid #142642;border-radius:34px;background:rgba(5,14,28,.94);box-shadow:0 0 55px rgba(0,145,255,.08);text-align:center}
+.avatar{width:110px;height:110px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;font-size:58px;background:radial-gradient(circle,#233957,#091425);border:1px solid #31547a;box-shadow:0 0 25px rgba(0,170,255,.3)}
+h1{font-size:38px;letter-spacing:2px;margin:0}h1 span{color:#0aa7ff}.subtitle{color:#64718a;letter-spacing:5px;font-size:11px;margin:10px 0 28px}
+.tabs{display:flex;background:#020914;border-radius:40px;padding:5px;margin-bottom:20px}.tab{width:50%;border:0;background:none;color:#6d7789;padding:15px;border-radius:35px;font-weight:800}.tab.active{background:linear-gradient(90deg,#078df8,#05b6ff);color:#03101e;box-shadow:0 0 20px #008cff55}
+input{width:100%;padding:19px 20px;border-radius:35px;border:1px solid #14253e;background:#020914;color:white;text-align:center;font-size:17px;outline:none;margin-bottom:18px}input:focus{border-color:#159fff}
+.primary{width:100%;border:0;border-radius:35px;padding:19px;background:linear-gradient(90deg,#078df8,#04b7ff);font-weight:900;letter-spacing:2px;color:#02101b;cursor:pointer}
+.label{margin:34px 0 12px;color:#69758a;letter-spacing:3px;font-size:10px}.code{border:1px dashed #1c385f;border-radius:22px;padding:28px;color:#168cff;font-size:26px;letter-spacing:8px;min-height:84px}
+.status{margin-top:30px;color:#66738b;font-size:11px;letter-spacing:1px;display:flex;gap:10px;justify-content:center;align-items:center}.status #dot{width:10px;height:10px;background:#08c875;border-radius:50%;box-shadow:0 0 10px #08c875}
+.commands{position:relative;width:min(760px,100%);margin:28px auto 0}.commands h2{font-size:15px;letter-spacing:3px}.cmd{display:flex;gap:16px;padding:14px 16px;border:1px solid #13233b;border-radius:15px;background:#071120;margin:8px 0}.cmd b{color:#00aaff;min-width:105px}.cmd span{color:#8d99ad}
+@media(max-width:560px){body{padding:14px}.panel{padding:34px 18px 25px}h1{font-size:30px}}
